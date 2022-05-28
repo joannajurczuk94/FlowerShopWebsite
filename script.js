@@ -17,9 +17,9 @@ document.querySelectorAll("nav-link").forEach((link) =>
 /*Image Carousel*/
 var view;
 view = [
-  "https://www.123kwiaty.pl/static/img/admin/zdjecia/888,255.jpg?1626791883",
-  "https://www.123kwiaty.pl/static/img/admin/zdjecia/1089,255.jpg?1641982553",
-  "https://www.123kwiaty.pl/static/img/admin/zdjecia/149,255.jpg?1626791865",
+  "https://www.shelliesflowers.co.uk/upload/mt/she160/products/category/congratulations.jpg",
+  "https://www.shelliesflowers.co.uk/upload/mt/she160/products/category/new-born.jpg",
+  "https://www.shelliesflowers.co.uk/upload/mt/she160/products/category/retirement.jpg",
 ];
 document.getElementById("next").addEventListener("click", (event) => {
   view.push(view.shift());
@@ -44,10 +44,12 @@ function getNumberOrString(value) {
   }
 }
 
-document.getElementById("button").addEventListener("click", (event) => {
-  let element_list = document.getElementById("list");
-  let new_li = document.createElement("li");
-  new_li.innerText = getNumberOrString(document.getElementById("text").value);
+document.getElementById("submit").addEventListener("click", (event) => {
+  let element_comments = document.getElementById("comments");
+  let new_div = document.createElement("div");
+  new_div.innerText = getNumberOrString(
+    document.getElementById("addcomment").value
+  );
 
-  element_list.appendChild(new_li);
+  element_comments.appendChild(new_div);
 });

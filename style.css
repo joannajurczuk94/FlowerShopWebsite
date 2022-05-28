@@ -2,7 +2,7 @@ html,
 body {
   text-align: center;
   background: #f8b9f5;
-  background: linear-gradient(-8deg, #b9c8c9, #f0c6ee);
+  background: linear-gradient(-8deg, #ffffff, #eeb6d8);
 }
 
 .logo {
@@ -156,6 +156,13 @@ img {
   padding: 30px 0px 30px 0px;
 }
 
+h1 {
+  color: rgb(45, 3, 99);
+}
+
 h2 {
   padding: 30px 0px 0px 0px;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: normal;
 }
